@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class= "flex-wrap">
+        <fieldset>
+            <form action novalidate>   
+                <input type="radio" name="rg" id="login" checked />
+                <input type="radio" name="rg" id="register" />
+                <input type="radio" name="rg" id="reset" />
+                <label for="sign-in">Login</label>
+                <label for="register">Register</label>
+                <label for="reset">Reset</label>
+
+                <input 
+                    class="login register reset"
+                    type="email"
+                    placeholder="Email"
+                />
+                <input 
+                    class="login register"
+                    type="password"
+                    placeholder="Password"
+                />
+                <input 
+                    class="register"
+                    type="password"
+                    placeholder="Repeat Password"
+                /> 
+                <button>Submit</button>
+            </form>
+
+        </fieldset>
+    </div>
+</body>
+
+</html>

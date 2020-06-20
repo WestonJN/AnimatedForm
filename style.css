@@ -1,0 +1,51 @@
+html{
+     box-sizing: border-box;
+ }
+
+body {
+    background-color: ghostwhite;
+    font-size: 16px;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+input,
+fieldset{
+    -webkit-appearance: none;
+    -moz-animation: none;
+    appearance: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.no-touchevents .btn.btn--secondary:hover{
+    -webkit-transform: none;
+    transform: none;
+}
+input[type="radio"]{
+    position: fixed;
+    left: -100px;
+}
+[id="login"]:checked ~ input.login,
+[id="register"]:checked ~ input.register,
+[id="reset"]:checked ~ input.reset{
+    max-height: 40px;
+    padding: 10px;
+    margin: 10px 0;
+    opacity: 1;
+}
+[id="login"]:checked ~ button.before{
+    content: "Login";
+}
+[id="register"]:checked ~ button.before{
+    content: "Register";
+}
+[id="reset"]:checked ~ button.before{
+    content: "Reset Password";
+}
